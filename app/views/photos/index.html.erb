@@ -1,0 +1,26 @@
+<div class="hero-unit">
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>Фото</th>
+    <th>Название</th>
+    <th>Категория</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @category.photos.each do |photo| %>
+  <tr>
+    <td><%= image_tag(photo.URL, :size => "150x200") %></td>
+    <td><%= photo.name %></td>
+    <td><%= link_to 'изменить', edit_category_photo_path( photo.category_id, photo.id) %></td>
+    <td><%= link_to 'удалить', category_photo_path(photo.category_id, photo.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to 'Добавить фото', new_category_photo_path %>
+
+
+ </div>

@@ -1,0 +1,33 @@
+<h1>Listing zayvkas</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Familiya</th>
+    <th>Otchestvo</th>
+    <th>Nomer telefona</th>
+    <th>Info o sebe</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zayvkas.each do |zayvka| %>
+  <tr>
+    <td><%= zayvka.name %></td>
+    <td><%= zayvka.email %></td>
+    <td><%= zayvka.familiya %></td>
+    <td><%= zayvka.otchestvo %></td>
+    <td><%= zayvka.nomer_telefona %></td>
+    <td><%= zayvka.info_O_sebe %></td>
+    <td><%= link_to 'Show', zayvka %></td>
+    <td><%= link_to 'Edit', edit_zayvka_path(zayvka) %></td>
+    <td><%= link_to 'Destroy', zayvka, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Zayvka', new_zayvka_path %>

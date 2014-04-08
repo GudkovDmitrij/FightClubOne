@@ -1,0 +1,160 @@
+@import "bootstrap";
+@import "fotorama";
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+
+}
+
+body {
+  background-image: url(Backround.png); /* Путь к фоновому изображению */
+  //background-color: #c7b39b; /* Цвет фона */
+}
+body {
+
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main_content {
+  margin-top: 60px;
+}
+.wrapper {
+
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  width: 100%;
+  cursor: default;
+
+  .content {
+    margin-top: 300px;
+    margin-left: 10px;
+    // border-top: 1px solid #d5d5d5;
+
+  }
+
+  .span2{
+    margin-top: 50px;
+    font-weight: bold;
+
+  }
+  .span10 {
+    width: 82.97872%;
+    margin-top: 10px;
+
+  }
+}
+#header {
+  position: relative;
+  z-index: 9999;
+  height: 120px;
+  margin: 0 0 0 0;
+
+
+  /*.logo-img{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 100px;
+  }*/
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  border-top: 1px solid #d5d5d5;
+  margin-top: 60px;
+  .main{
+    margin-top: 15px;
+
+
+  }
+  small {
+    font-size: 11px;
+    color: #999999;
+
+  }
+}
+#table1 {
+  margin-top: 70px;
+}
+
+#form6 {
+  margin-top: 15px;
+  width: 980px;
+  height: 500px;
+  padding-top: 25px;
+  padding-left: 40px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+#form3 {
+  width: 100%;
+  height: 42px;
+  margin-left: 25px;
+}
+
+#form4 {
+  width: 250px;
+  height: 35px;
+}
+
+#form5 {
+  width: 500px;
+  height: 32px;
+  margin-top: 5px;
+}
+input {
+  width: 550px;
+}
+#btn1 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 70px;
+  margin-left: 5px;
+}
+
+
+#map {
+  width:98%;
+  height:500px;
+}
+
+#muted  {
+  font-size: 30px;
+  margin-top: 5px;
+
+}

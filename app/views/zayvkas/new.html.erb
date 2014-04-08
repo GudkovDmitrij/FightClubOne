@@ -1,0 +1,78 @@
+
+<%= form_for(@zayvka) do |f| %>
+    <% if @zayvka.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@zayvka.errors.count, "error") %> prohibited this zayvka from being saved:</h2>
+
+          <ul>
+            <% @zayvka.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="span7" id="form6">
+      <h2>Ваши контактные данные</h2>
+      <br>
+      <div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>Ваше имя:</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :name %> <br>
+        </div>
+      </div>
+
+      <div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>Отчество</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :otchestvo %>
+        </div>
+      </div>
+
+      <div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>Фамилия</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :familiya %>
+        </div>
+      </div>
+
+      <div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>Телефон:</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :nomer_telefona %> <br>
+        </div>
+      </div>
+
+      <div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>Email</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :email %>
+        </div>
+      </div>
+
+<div class="span7" id="form3">
+        <div class="span7" id="form4">
+          <h5>О себе</h5>
+        </div>
+        <div class="span7" id="form5">
+          <%= f.text_field :info_O_sebe %>
+        </div>
+      </div>
+
+      <br>
+
+      <%= f.submit 'Оставить запрос', class: 'btn btn-info btn-large', id:"btn1"  %>
+
+    </div>
+
+<% end %>

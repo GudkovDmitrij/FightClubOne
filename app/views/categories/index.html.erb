@@ -1,0 +1,21 @@
+<% provide(:title, 'Портфолио') %>
+<div class="hero-unit">
+
+  <h3 class="center">Галерея</h3>
+
+  <br />
+
+  <div class="row-fluid">
+
+    <% @categories.each do |category| %>
+        <div class="span3">
+          <td><%= link_to category.name, category %></td>
+        </div>
+    <% end %>
+  </div>
+  <br />
+  <%= link_to 'Создать новый альбом', new_category_path %>
+
+</div>
+
+
