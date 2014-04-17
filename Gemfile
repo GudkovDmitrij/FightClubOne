@@ -3,7 +3,6 @@ ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '3.2.16'
-gem "heroku"
 
 
 group :development do
@@ -26,4 +25,3 @@ end
 
 gem 'jquery-rails'
 gem 'fotoramajs'
-

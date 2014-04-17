@@ -1,4 +1,4 @@
-
+<div class="center hero-unit">
 <%= form_for(@zayvka) do |f| %>
     <% if @zayvka.errors.any? %>
         <div id="error_explanation">
@@ -12,67 +12,68 @@
         </div>
     <% end %>
 
-    <div class="span7" id="form6">
+
       <h2>Ваши контактные данные</h2>
       <br>
-      <div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1">
           <h5>Ваше имя:</h5>
         </div>
-        <div class="span7" id="form5">
-          <%= f.text_field :name %> <br>
+        <div class="span10">
+          <%= f.text_field :name, id:"user_initials" %> <br>
         </div>
       </div>
 
-      <div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1">
           <h5>Отчество</h5>
         </div>
-        <div class="span7" id="form5">
-          <%= f.text_field :otchestvo %>
+        <div class="span10">
+          <%= f.text_field :otchestvo, id:"user_initials" %>
         </div>
       </div>
 
-      <div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1">
           <h5>Фамилия</h5>
         </div>
-        <div class="span7" id="form5">
-          <%= f.text_field :familiya %>
+        <div class="span10">
+          <%= f.text_field :familiya, id:"user_initials" %>
         </div>
       </div>
 
-      <div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1">
           <h5>Телефон:</h5>
         </div>
-        <div class="span7" id="form5">
-          <%= f.text_field :nomer_telefona %> <br>
+        <div class="span10" >
+          <%= f.text_field :nomer_telefona, id:"user_phone" %> <br>
         </div>
       </div>
 
-      <div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1">
           <h5>Email</h5>
         </div>
-        <div class="span7" id="form5">
-          <%= f.text_field :email %>
+        <div class="span10">
+          <%= f.text_field :email, id:"user_email"   %>
         </div>
       </div>
 
-<div class="span7" id="form3">
-        <div class="span7" id="form4">
+      <div class="row-fluid">
+        <div class="span1 offset1" >
           <h5>О себе</h5>
         </div>
-        <div class="span7" id="form5">
+        <div class="span10">
           <%= f.text_field :info_O_sebe %>
         </div>
       </div>
 
-      <br>
-
-      <%= f.submit 'Оставить запрос', class: 'btn btn-info btn-large', id:"btn1"  %>
-
-    </div>
+      <div class="row-fluid">
+        <div class="span2 offset4" >
+      <%= f.submit 'Оставить запрос', class: 'btn btn-info btn-large', id:"submit_user_form"  %>
+        </div>
+      </div>
 
 <% end %>
+  </div>
